@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         android:paddingEnd="15dp"
-        android:text="123 x 4 ="
+        android:text=""
         android:textAlignment="viewEnd"
         android:textColor="#575757"
         android:textSize="25sp"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         android:paddingEnd="15dp"
-        android:text="492"
+        android:text=""
         android:textAlignment="viewEnd"
         android:textColor="#000000"
         android:textSize="50sp"
@@ -108,6 +108,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"/>
 
     <!--    hang 1-->
     <ImageButton
@@ -350,7 +357,7 @@
     <!--    hang 5-->
     <Button
         android:layout_margin="8dp"
-        android:id="@+id/btnAvg"
+        android:id="@+id/btnOpp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:backgroundTint="@color/white"
@@ -358,7 +365,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:layout_constraintBottom_toTopOf="@id/guideline_hor4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_hor5"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintLeft_toRightOf="@id/guideline_ver0"
         app:layout_constraintRight_toLeftOf="@id/guideline_ver1"/>
@@ -373,7 +380,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:layout_constraintBottom_toTopOf="@id/guideline_hor4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_hor5"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintLeft_toRightOf="@id/guideline_ver1"
         app:layout_constraintRight_toLeftOf="@id/guideline_ver2"/>
@@ -388,7 +395,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:layout_constraintBottom_toTopOf="@id/guideline_hor4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_hor5"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintLeft_toRightOf="@id/guideline_ver2"
         app:layout_constraintRight_toLeftOf="@id/guideline_ver3"/>
@@ -403,7 +410,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:layout_constraintBottom_toTopOf="@id/guideline_hor4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_hor5"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintLeft_toRightOf="@id/guideline_ver3"
         app:layout_constraintRight_toLeftOf="@id/guideline_ver4"/>
